@@ -24,7 +24,7 @@ public class ExampleClass : MonoBehaviourExtended
 }
 ```
 
-This `OnDisableOnly` method will be invoked only when the instance is disabled, but not when it is destroyed. The registration for `OnDisableOnly` events is done automatically during the `Awake` phase of the Unity game loop.
+This `OnDisableOnly` method will be invoked only when the instance is disabled, but not when it is destroyed. The registration for `OnDisableOnly` events is done automatically when an instance of a class that extends `MonoBehaviourExtended` is created, i.e., in the `MonoBehaviourExtended` constructor.
 
 ## Disclaimer
 
